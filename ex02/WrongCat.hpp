@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 17:13:55 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/11 11:44:44 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/11 18:19:31 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 # define WRONGCAT_HPP
 
 # include <iostream>
-# include "WrongAnimal.hpp"
+# include "AWrongAnimal.hpp"
 
-class	WrongCat : public WrongAnimal
+class	WrongCat : public AWrongAnimal
 {
 	public:
 		WrongCat		( void );

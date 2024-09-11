@@ -6,20 +6,20 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 10:11:59 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/11 18:02:39 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/11 18:12:07 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 #include "Dog.hpp"
 
-Dog::Dog( void ) : Animal()
+Dog::Dog( void ) : AAnimal()
 {
 	_type = "Dog";
 	std::cout << "\tConstructed new dog" << std::endl;
 }
 
-Dog::Dog( const Dog &other) : Animal(other)
+Dog::Dog( const Dog &other) : AAnimal(other)
 {
 	_type = other._type;
 	std::cout << "\tConstructed copied dog" << std::endl;	

@@ -6,20 +6,20 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 10:04:58 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/11 18:05:06 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/11 18:11:52 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 #include "Cat.hpp"
 
-Cat::Cat( void ) : Animal()
+Cat::Cat( void ) : AAnimal()
 {
 	_type = "Cat";
 	std::cout << "\tConstructed new cat" << std::endl;
 }
 
-Cat::Cat( const Cat &other ) : Animal(other)
+Cat::Cat( const Cat &other ) : AAnimal(other)
 {
 	_type = other._type;
 	std::cout << "\tConstructed copied cat" << std::endl;

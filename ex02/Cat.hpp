@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 17:13:55 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/11 17:55:48 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/11 18:12:44 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 # define CAT_HPP
 
 # include <iostream>
-# include "Animal.hpp"
+# include "AAnimal.hpp"
 
-class	Cat : public Animal
+class	Cat : public AAnimal
 {
 	public:
 		Cat		( void );
