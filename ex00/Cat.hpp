@@ -6,11 +6,15 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 17:13:55 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/10 17:18:26 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/11 10:28:31 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cat.hpp"
+#ifndef CAT_HPP
+# define CAT_HPP
+
+# include <iostream>
+# include "Animal.hpp"
 
 class	Cat : public Animal
 {
@@ -21,4 +25,6 @@ class	Cat : public Animal
 		~Cat	( void );
 
 	private:
-}
+} ;
+
+#endif

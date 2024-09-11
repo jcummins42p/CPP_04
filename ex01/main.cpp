@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 16:57:54 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/11 16:54:46 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/11 17:45:16 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	main(void)
 	std::cout << "Creating louis, animal object" << std::endl;
 	const WrongAnimal	*louis = new WrongCat();
 	std::cout << "Creating felix, animal object" << std::endl;
-	const Cat			felix;
+	const Cat			pepper;
 	std::cout << "Creating rex, animal object" << std::endl;
 	const Dog			rex;
 	std::cout << "Creating fido, animal object" << std::endl;
@@ -38,14 +38,15 @@ int	main(void)
 	buster->makeSound();
 	louis->makeSound();
 	rex.makeSound();
-	felix.makeSound();
 
 	std::cout << std::endl << "Testing brain function" << std::endl;
 	rex.fillBrain(20);
-	felix.fillBrain(88);
+	pepper.fillBrain(88);
 	rex.getIdeas();
-	felix.getIdeas();
+	pepper.getIdeas();
 
+	std::cout << std::endl << "Testing vomit facility" << std::endl;
+	pepper.vomitLoudly();
 	
 	std::cout << std::endl << "Testing animal destructors" << std::endl;
 	return 0;

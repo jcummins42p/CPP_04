@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 10:04:58 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/11 16:40:43 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/11 17:40:54 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,4 +38,11 @@ Cat	&Cat::operator=( const Cat &other )
 Cat::~Cat( void )
 {
 	std::cout << "\tDestroyed cat" << std::endl;
+}
+
+void	Cat::vomitLoudly( void ) const
+{
+	for (int i = 0; i < 100; i++)
+		if (_brain->getIdea(i) == "Eat Grass")
+			std::cout << "BHGLEEAAHHHHHHhhhhhh....." << std::endl;
 }

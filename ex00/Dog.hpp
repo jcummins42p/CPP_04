@@ -6,12 +6,15 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 17:17:04 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/10 17:19:53 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/11 10:27:44 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef DOG_HPP
 # define DOG_HPP
+
+# include <iostream>
+# include "Animal.hpp"
 
 class	Dog : public Animal
 {
@@ -22,7 +25,6 @@ class	Dog : public Animal
 		~Dog	( void );
 
 	private:
-		std::string	type;
-}
+} ;
 
 #endif
