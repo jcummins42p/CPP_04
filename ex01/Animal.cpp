@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 17:13:13 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/11 17:24:24 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/16 16:44:33 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ Animal &Animal::operator=( const Animal &other )
 		else
 		{
 			delete _brain;
-			_brain = nullptr;
 		}
 		_type = other._type;
 	}
@@ -59,7 +58,7 @@ void Animal::makeSound( void ) const
 	else if (_type == "Cat")
 		std::cout << "Meow" << std::endl;
 	else
-		std::cout << "Mumblemumble" << std::endl;		
+		std::cout << "Mumblemumble" << std::endl;
 }
 
 void	Animal::getIdeas( void ) const
@@ -88,7 +87,7 @@ void	Animal::fillBrain( int ideas ) const
 							"Growl in sleep",
 							"Bark at shadows"
 							};
-	
+
 	std::string catthoughts[5] = {
 							"Look Disapprovingly",
 							"Eat Grass",
@@ -99,9 +98,9 @@ void	Animal::fillBrain( int ideas ) const
 	std::string	*thoughts;
 
 	if (_type == "Cat")
-		thoughts = catthoughts;		
+		thoughts = catthoughts;
 	if (_type == "Dog")
-		thoughts = dogthoughts;		
+		thoughts = dogthoughts;
 
 	for (int i = 0; i <= ideas; i++)
 		this->setIdea(thoughts[i % 5]);
