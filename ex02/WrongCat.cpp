@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 10:04:58 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/11 18:19:54 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/16 18:29:58 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,4 +38,14 @@ WrongCat	&WrongCat::operator=( const WrongCat &other )
 WrongCat::~WrongCat( void )
 {
 	std::cout << "\tDestroyed cat" << std::endl;
+}
+
+void WrongCat::makeSound( void ) const
+{
+	if (_type == "Cat")
+		std::cout << "Woof!!!" << std::endl;
+	else if (_type == "Dog")
+		std::cout << "Meow" << std::endl;
+	else
+		std::cout << "Mumblemumble" << std::endl;
 }
