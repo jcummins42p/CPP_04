@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 16:57:54 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/11 18:21:00 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/16 19:20:06 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,6 @@ int	main(void)
 	felix.getIdeas();
 
 	felix.makeSound();
-	
 	std::cout << std::endl << "Testing animal destructors" << std::endl;
 	return 0;
 }

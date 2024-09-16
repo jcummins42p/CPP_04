@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 17:13:55 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/11 10:28:31 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/16 18:45:52 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ class	Cat : public Animal
 		Cat 	&operator=( const Cat &other );
 		~Cat	( void );
 
+		void	makeSound( void ) const;
 	private:
 } ;
 

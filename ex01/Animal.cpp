@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 17:13:13 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/16 16:44:33 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/16 18:54:52 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,12 +53,7 @@ Animal::~Animal( void )
 
 void Animal::makeSound( void ) const
 {
-	if (_type == "Dog")
-		std::cout << "Woof!!!" << std::endl;
-	else if (_type == "Cat")
-		std::cout << "Meow" << std::endl;
-	else
-		std::cout << "Mumblemumble" << std::endl;
+	std::cout << "Mumblemumble" << std::endl;
 }
 
 void	Animal::getIdeas( void ) const

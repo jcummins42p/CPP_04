@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 10:11:59 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/11 16:31:06 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/16 18:46:26 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ Dog::Dog( void ) : Animal()
 Dog::Dog( const Dog &other) : Animal(other)
 {
 	_type = other._type;
-	std::cout << "\tConstructed copied dog" << std::endl;	
+	std::cout << "\tConstructed copied dog" << std::endl;
 }
 
 Dog &Dog::operator=( const Dog &other )
@@ -38,4 +38,9 @@ Dog &Dog::operator=( const Dog &other )
 Dog::~Dog( void )
 {
 	std::cout << "\tDestroyed dog" << std::endl;
+}
+
+void	Dog::makeSound( void ) const
+{
+	std::cout << "Woof!" << std::endl;
 }

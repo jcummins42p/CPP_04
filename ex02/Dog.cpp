@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 10:11:59 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/11 18:12:07 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/16 19:19:09 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ Dog::Dog( void ) : AAnimal()
 Dog::Dog( const Dog &other) : AAnimal(other)
 {
 	_type = other._type;
-	std::cout << "\tConstructed copied dog" << std::endl;	
+	std::cout << "\tConstructed copied dog" << std::endl;
 }
 
 Dog &Dog::operator=( const Dog &other )

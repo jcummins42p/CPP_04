@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 17:03:56 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/11 15:14:13 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/16 19:11:52 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,16 +22,16 @@ class	Animal
 		Animal	( void );
 		Animal	( const Animal &other );
 		Animal	&operator=( const Animal &other );
-		~Animal ( void );
-		
-		void		makeSound( void ) const;
-		const		std::string	getType( void ) const;
-		void		getIdeas( void ) const;
-		void		setIdea( const std::string newidea ) const; 
-		void		fillBrain( int ideas ) const;
+		virtual	~Animal( void );
+
+		virtual void	makeSound( void ) const;
+		const			std::string	getType( void ) const;
+		void			getIdeas( void ) const;
+		void			setIdea( const std::string newidea ) const;
+		void			fillBrain( int ideas ) const;
 	protected:
-		std::string	_type;
-		Brain		*_brain;
+		std::string		_type;
+		Brain			*_brain;
 } ;
 
 #endif
