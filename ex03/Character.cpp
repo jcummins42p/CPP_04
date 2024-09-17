@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 15:09:46 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/17 18:15:49 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/17 18:42:50 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,14 +92,16 @@ void Character::equip(AMateria *m) {
 				<< _inventory[idx]->getType() << " materia." << std::endl;
 }
 
-void Character::unequip(int idx) {
+AMateria *Character::unequip(int idx) {
 	if (idx < 0 || idx > 3 || !_inventory[idx])
 	{
 		std::cout << "Nothing to unequip in that slot" << std::endl;
 	}
+	AMateria	*drop = _inventory[idx];
 	std::cout	<< _name << " put down "
 				<< _inventory[idx]->getType() << " materia." << std::endl;
 	_inventory[idx] = NULL;
+	return (drop);
 }
 
 void Character::use(int idx, ICharacter &target) {
