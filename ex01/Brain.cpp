@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 11:57:02 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/11 17:27:04 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/17 19:04:46 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int	Brain::getIdeaIndex( void )
 void	Brain::setIdeaIndex( int i )
 {
 	_idea_index = i;
-}	
+}
 
 void	Brain::incrIdeaIndex( void )
 {

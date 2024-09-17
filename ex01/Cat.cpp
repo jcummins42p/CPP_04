@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 10:04:58 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/16 19:00:12 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/17 19:05:16 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ Cat::~Cat( void )
 
 void Cat::makeSound( void ) const
 {
-	bool	vomswitch;
+	bool	vomswitch = false;
 
 	for (int i = 0; i < 100; i++)
 		if (_brain->getIdea(i) == "Eat Grass")
