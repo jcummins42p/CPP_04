@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 17:03:56 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/16 18:27:05 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/17 19:09:51 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class	AAnimal
 		AAnimal	( void );
 		AAnimal	( const AAnimal &other );
 		AAnimal	&operator=( const AAnimal &other );
-		~AAnimal ( void );
+		virtual ~AAnimal ( void );
 
 		virtual void	makeSound( void ) const = 0;
 		const			std::string	getType( void ) const;

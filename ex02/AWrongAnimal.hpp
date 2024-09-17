@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 17:03:56 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/16 18:27:14 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/17 19:09:28 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class	AWrongAnimal
 		AWrongAnimal	( void );
 		AWrongAnimal	( const AWrongAnimal &other );
 		AWrongAnimal	&operator=( const AWrongAnimal &other );
-		~AWrongAnimal	( void );
+		virtual ~AWrongAnimal	( void );
 
 		virtual void	makeSound( void ) const = 0;
 		const			std::string	getType( void ) const;
