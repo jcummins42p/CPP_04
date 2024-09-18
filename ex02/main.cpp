@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 16:57:54 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/17 19:07:59 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/18 14:40:07 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@
 
 int	main(void)
 {
-	std::cout << "Creating buster, animal object" << std::endl;
+	std::cout << "Creating buster, animal object pointer" << std::endl;
 	const AAnimal		*buster = new Dog();
-	std::cout << "Creating louis, animal object" << std::endl;
+	std::cout << "Creating louis, animal object pointer" << std::endl;
 	const AWrongAnimal	*louis = new WrongCat();
 	std::cout << "Creating felix, animal object" << std::endl;
 	const Cat			felix;
