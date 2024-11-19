@@ -6,39 +6,36 @@
 #    By: jcummins <jcummins@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/26 18:08:59 by jcummins          #+#    #+#              #
-#    Updated: 2024/09/11 17:53:11 by jcummins         ###   ########.fr        #
+#    Updated: 2024/11/19 17:30:40 by jcummins         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = abstractclass
 
-SRC_DIR = .
-OBJ_DIR = obj
-CC = c++
-CFLAGS = -g -Werror -Wextra -Wall -pedantic -std=c++98 -lstdc++
+CXX = c++
+CXXFLAGS = -g -Werror -Wextra -Wall -pedantic -std=c++98
 
-SRCS = $(shell find $(SRC_DIR) -name '*.cpp')
-OBJS = $(SRCS:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
+SRCS = AAnimal.cpp AWrongAnimal.cpp Brain.cpp Cat.cpp Dog.cpp main.cpp WrongCat.cpp
+OBJS = $(SRCS:%.cpp=%.o)
+HEADS = AAnimal.hpp AWrongAnimal.hpp Brain.hpp Cat.hpp Dog.hpp WrongCat.hpp
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	@$(CC) $(CFLAGS) $^ -o $@
+	@$(CXX) $(CXXFLAGS) $^ -o $@
 	@echo "✅ Linking object files into executable $@"
 
-$(OBJ_DIR)/%.o:	$(SRC_DIR)/%.c $(HEADS)
-	@mkdir -p $(@D)
-	@$(CC) $(CFLAGS) -c $< -o $@
+%.o: %.cpp $(HEADS)
+	@$(CXX) $(CXXFLAGS) -c $< -o $@
 	@echo "✅ Complied object file $@ from source file $<"
 
 clean:
 	@echo "💥 Removing all object files"
-	@rm -rf $(OBJ_DIR)
-	@rm -rf *.dSYM/
+	@rm -f $(OBJS)
 
 fclean: clean
-	@echo "💥 Removing all object files and executable"
-	@rm -rf $(NAME)
+	@echo "💥 Removing executable"
+	@rm -f $(NAME)
 
 re:	fclean all
 
